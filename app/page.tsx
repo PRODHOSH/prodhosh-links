@@ -12,8 +12,54 @@ export default function Home() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
-    setFormData({ name: "", email: "", message: "" })
+
+    // --- Google Form auto-submit support ---
+    // INSTRUCTIONS: To connect this form to Google Forms:
+    // 1. Open your Google Form in edit mode
+    // 2. Click the 3 dots menu → "Get pre-filled link"
+    // 3. Fill in dummy values for Name, Email, Message fields
+    // 4. Click "Get link" and copy the full URL
+    // 5. Paste that URL below in PREFILL_URL
+    const PREFILL_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdKsfSGB4lTedZKbsg2c3WX7sEZs6hxpN24Cl7zvAc_tMqaFA/viewform?usp=pp_url&entry.1916182081=Prodhosh&entry.528512701=prodhoshlaptop@gmail.com&entry.1941518091=Hello"
+    const GOOGLE_FORM_ID = "1FAIpQLSdKsfSGB4lTedZKbsg2c3WX7sEZs6hxpN24Cl7zvAc_tMqaFA"
+    const FORM_ACTION = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`
+
+    async function submitToGoogle() {
+      if (!PREFILL_URL) return
+      try {
+        const url = new URL(PREFILL_URL)
+        const params = Array.from(url.searchParams.entries())
+        const entryKeys = params.map(([k]) => k).filter((k) => k.startsWith("entry."))
+
+        if (entryKeys.length === 0) return
+
+        const body = new URLSearchParams()
+        // Map first three entry keys to name, email, message
+        const values = [formData.name, formData.email, formData.message]
+        for (let i = 0; i < Math.min(entryKeys.length, values.length); i++) {
+          body.append(entryKeys[i], values[i])
+        }
+
+        // Submit using no-cors to avoid CORS blocking; response won't be readable.
+        await fetch(FORM_ACTION, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          body: body.toString(),
+        })
+      } catch (err) {
+        // silent fail - keep UX intact
+        console.error("Google Form submit failed:", err)
+      }
+    }
+
+    // Trigger google submission (if PREFILL_URL provided) then local UX update
+    submitToGoogle().finally(() => {
+      setTimeout(() => setSubmitted(false), 3000)
+      setFormData({ name: "", email: "", message: "" })
+    })
   }
 
   const socialLinks = [
@@ -27,7 +73,15 @@ export default function Home() {
   return (
     <div className="relative w-full min-h-screen bg-black overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Beams beamNumber={8} speed={1.5} noiseIntensity={1.2} scale={0.15} />
+          <Beams
+           beamNumber={12}
+           beamWidth={12}
+           beamHeight={40}
+           rotation={-30}
+           speed={1.5}
+           noiseIntensity={1.2}
+           scale={0.45}
+          />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50 z-10" />
@@ -37,12 +91,14 @@ export default function Home() {
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-16 animate-fade-in">
             <img
-              src="/images/profile-photo.jpg"
-              alt="Prodhosh"
-              className="w-28 h-28 rounded-full border-2 border-white/20 object-cover mb-8 shadow-2xl"
-            />
+  src="/images/profile-photo.jpg"
+  alt="Prodhosh"
+  className="w-60 h-60 -mt-5 rounded-full border-2 border-white/20 
+             object-cover object-[center_30%] mb-6 shadow-2xl"
+/>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 tracking-tight">Prodhosh</h1>
+
+            <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 tracking-tight">Prodhosh VS</h1>
             <p className="text-base text-gray-300 text-center max-w-sm text-balance leading-relaxed">
               Full-stack developer crafting elegant digital solutions with modern web technologies.
             </p>
@@ -61,7 +117,7 @@ export default function Home() {
                   aria-label={social.label}
                   className="group p-3 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <Icon className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" />
+                  <Icon className="w-6 h-6 text-gray-300 group-hover:text-white transition-colors" />
                 </a>
               )
             })}
@@ -112,6 +168,7 @@ export default function Home() {
                   required
                 />
                 <button
+
                   type="submit"
                   className="w-full px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 hover:border-white/30 text-sm"
                 >
