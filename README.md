@@ -1,30 +1,29 @@
-# Single page website
+# Prodhosh Links
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A clean, minimal personal links hub to centralize my online presence and enable quick contact.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/prodhoshvs2025-8980s-projects/v0-single-page-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/ggMSlvNXTsB)
+This page acts as a digital business card — showcasing my profiles and allowing visitors to send messages directly through a contact form.
 
-## Overview
+## ✨ Features
+- Centralized access to all important links
+- Clean, modern UI with dark theme
+- Social profile shortcuts
+- Built-in contact form for direct messaging
+- Fully responsive across devices
+- Deployed and production-ready
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🔗 Live Demo
+https://prodhosh-links.vercel.app
 
-## Deployment
 
-Your project is live at:
+## 📬 Contact
+Visitors can reach out directly using the contact form available on the page.
 
-**[https://vercel.com/prodhoshvs2025-8980s-projects/v0-single-page-website](https://vercel.com/prodhoshvs2025-8980s-projects/v0-single-page-website)**
+## 📌 Use Case
+- Personal link hub
+- Digital business card
+- Quick sharing via bio, resume, or QR code
 
-## Build your app
+---
 
-Continue building your app on:
-
-**[https://v0.app/chat/ggMSlvNXTsB](https://v0.app/chat/ggMSlvNXTsB)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Built with simplicity and usability in mind.
