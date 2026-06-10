@@ -1,0 +1,246 @@
+/* Fonts — copied directly from masterPortfolio/src/assets/fonts */
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Google Sans Bold";
+  src: local("Google Sans Bold"), url("assets/fonts/GoogleSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Google Sans Bold Italic";
+  src: local("Google Sans Bold Italic"), url("assets/fonts/GoogleSans-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Google Sans Medium";
+  src: local("Google Sans Medium"), url("assets/fonts/GoogleSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Google Sans Regular";
+  src: local("Google Sans Regular"), url("assets/fonts/GoogleSans-Regular.ttf") format("truetype");
+}
+
+/* Theme — purpleTheme (chosenTheme) from masterPortfolio/src/theme.js */
+:root {
+  --body: #F8EFF4;
+  --text: #231942;
+  --highlight: #E0B1CB;
+  --secondary-text: #655E7A;
+  --image-highlight: #BE95C4;
+  --jacket: #5E548E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--body);
+  color: var(--text);
+  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 10px 40px;
+  text-align: center;
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--image-highlight);
+  margin-bottom: 10px;
+}
+
+.greeting-text {
+  margin: 10px 0 0;
+  font-size: 38px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+  color: var(--text);
+}
+
+.greeting-nickname {
+  margin: 4px 0 0;
+  font-size: 25px;
+  font-family: "Google Sans Bold Italic";
+  color: var(--text);
+}
+
+.subtitle {
+  margin: 16px auto 0;
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Google Sans Medium";
+  color: var(--secondary-text);
+  max-width: 420px;
+}
+
+/* Social media row — same markup & rules as SocialMedia.css */
+.social-media-div {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-button {
+  margin: 0 5px 10px;
+  display: inline-block;
+}
+
+.icon-button i {
+  background-color: var(--bg);
+  color: white;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  width: 2.6rem;
+  text-align: center;
+  user-select: none;
+}
+
+.icon-button:hover i {
+  background-color: var(--text);
+  transition: 0.3s ease-in;
+}
+
+/* Link buttons — same rules as Button.css .main-button, stretched full width */
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.main-button {
+  background-color: var(--text);
+  border: solid 1px var(--text);
+  color: var(--body);
+  font-weight: 500;
+  line-height: 1.1;
+  width: 100%;
+  padding: 13px 22px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Google Sans Regular";
+  display: block;
+  margin-top: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in;
+}
+
+.main-button:hover {
+  background-color: var(--body);
+  color: var(--text);
+}
+
+/* Contact form */
+.section-title {
+  font-family: "Google Sans Bold";
+  font-size: 24px;
+  color: var(--text);
+  margin: 36px 0 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--text);
+  background: #ffffff;
+  color: var(--text);
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--secondary-text);
+  opacity: 1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--image-highlight);
+  box-shadow: 0 0 0 3px var(--highlight);
+}
+
+.contact-form .main-button {
+  margin-top: 4px;
+  cursor: pointer;
+  border: solid 1px var(--text);
+}
+
+.form-status {
+  display: none;
+  margin: 4px 0 0;
+  font-family: "Google Sans Medium";
+  color: var(--jacket);
+  text-align: center;
+}
+
+.form-status.show {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  font-family: "Google Sans Medium";
+  color: var(--secondary-text);
+  padding: 20px 10px 30px;
+}
+
+.footer a {
+  color: var(--secondary-text);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.footer a:hover {
+  color: var(--text);
+}
+
+/* Media Query — mirrors masterPortfolio breakpoints */
+@media (max-width: 320px) {
+  .main-button {
+    font-size: 12px;
+  }
+}
