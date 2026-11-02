@@ -381,3 +381,28 @@ a {
     transition: none !important;
   }
 }
+
+/* 404 */
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notfound .code {
+  margin: 0;
+  font-size: clamp(110px, 32vw, 180px);
+  line-height: 0.9;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  font-variation-settings: "wdth" 80;
+  color: var(--hot);
+}
+
+.notfound .name {
+  margin-top: 12px;
+}
+
+.notfound .links {
+  margin-top: 32px;
+}

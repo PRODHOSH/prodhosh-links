@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 | Page not found | Prodhosh VS</title>
+    <meta name="description" content="This page doesn't exist. Head back to Prodhosh VS's links." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0e0d0c" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="main notfound">
+      <p class="code reveal" style="--i:0" aria-hidden="true">404</p>
+      <h1 class="name reveal" style="--i:1">Lost your way?</h1>
+      <h2 class="handle reveal" style="--i:2">( nothing here )</h2>
+      <p class="subtitle reveal" style="--i:3">
+        The page you're looking for doesn't exist or has moved. Everything I'm up to lives on the links page.
+      </p>
+
+      <div class="links reveal" style="--i:4">
+        <a class="main-button primary" href="/">Back to links</a>
+        <a class="main-button" href="https://prodhosh.me" rel="noopener noreferrer">Visit portfolio</a>
+      </div>
+    </main>
+
+    <footer class="footer mono">
+      &copy; <span id="year"></span> Prodhosh VS &middot;
+      <a href="https://prodhosh.me" rel="noopener noreferrer">prodhosh.me</a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
