@@ -15,3 +15,12 @@ iframe.addEventListener("load", () => {
   form.reset();
   submitted = false;
 });
+
+// Track which links get clicked (GA4)
+document.querySelectorAll("[data-track]").forEach((el) => {
+  el.addEventListener("click", () => {
+    if (typeof gtag === "function") {
+      gtag("event", "link_click", { link_name: el.dataset.track });
+    }
+  });
+});

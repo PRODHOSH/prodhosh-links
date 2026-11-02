@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YHB2PQ22X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0YHB2PQ22X');
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,6 +17,7 @@
     <meta property="og:title" content="Prodhosh VS | Links" />
     <meta property="og:description" content="All of Prodhosh VS's links in one place — portfolio, projects, socials, resume, and more." />
     <meta property="og:image" content="https://links.prodhosh.me/og-image.png" />
+    <meta property="og:image:alt" content="Prodhosh VS — links" />
     <meta property="og:site_name" content="Prodhosh VS" />
 
     <!-- Twitter Card -->
@@ -37,80 +29,120 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="theme-color" content="#231942" />
+    <meta name="theme-color" content="#0e0d0c" />
+
+    <!-- Fonts (same families as prodhosh.me) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YHB2PQ22X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-0YHB2PQ22X');
+    </script>
   </head>
   <body>
-    <main class="main">
-      <img class="avatar" src="assets/img/profile.jpeg" alt="Prodhosh VS" />
+    <div class="grain" aria-hidden="true"></div>
 
-      <h1 class="greeting-text">Prodhosh VS</h1>
-      <h2 class="greeting-nickname">( thecodeguy )</h2>
-      <p class="subtitle">
-        A passionate individual who always thrives to work on end-to-end products which
-        develop sustainable and scalable social and technical systems to create impact.
+    <main class="main">
+      <img class="avatar reveal" style="--i:0" src="assets/img/profile.jpg" alt="Prodhosh VS" width="132" height="132" />
+
+      <h1 class="name reveal" style="--i:1">Prodhosh VS</h1>
+      <h2 class="handle reveal" style="--i:2">( thecodeguy )</h2>
+      <p class="status mono reveal" style="--i:3"><span class="dot"></span>Freelancer · Product Builder · Chennai</p>
+      <p class="subtitle reveal" style="--i:4">
+        I build end-to-end products that scale: Next.js on the front, Supabase underneath, and LLMs wired in where they actually help.
       </p>
 
-      <div class="social-media-div">
-        <a href="https://github.com/PRODHOSH" target="_blank" rel="noopener noreferrer" class="icon-button" style="--bg:#181717">
+      <nav class="socials reveal" style="--i:5" aria-label="Social profiles">
+        <a class="icon-button" href="https://github.com/PRODHOSH" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-track="github">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/prodhoshvs/" target="_blank" rel="noopener noreferrer" class="icon-button" style="--bg:#0077B5">
+        <a class="icon-button" href="https://www.linkedin.com/in/prodhoshvs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-track="linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="mailto:hello@prodhosh.me" class="icon-button" style="--bg:#D14836">
-          <i class="fab fa-google"></i>
+        <a class="icon-button" href="https://x.com/prodhosh3" target="_blank" rel="noopener noreferrer" aria-label="X" data-track="x">
+          <i class="fab fa-x-twitter"></i>
         </a>
-        <a href="https://www.instagram.com/itzprodhosh/" target="_blank" rel="noopener noreferrer" class="icon-button" style="--bg:#E4405F">
+        <a class="icon-button" href="https://www.instagram.com/itzprodhosh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-track="instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://twitter.com/prodhosh3" target="_blank" rel="noopener noreferrer" class="icon-button" style="--bg:#1DA1F2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://discord.com/users/itzprodhoshh" target="_blank" rel="noopener noreferrer" class="icon-button" style="--bg:#7289DA">
+        <a class="icon-button" href="https://discord.com/users/itzprodhoshh" target="_blank" rel="noopener noreferrer" aria-label="Discord" data-track="discord">
           <i class="fab fa-discord"></i>
         </a>
-      </div>
+        <a class="icon-button" href="mailto:hello@prodhosh.me" aria-label="Email" data-track="email_icon">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </nav>
 
-      <div class="links">
-        <a class="main-button" href="https://prodhosh.me" target="_blank" rel="noopener noreferrer">Portfolio</a>
-        <a class="main-button" href="http://blog.prodhosh.me/" target="_blank" rel="noopener noreferrer">Blog</a>
-        <a class="main-button" href="https://prodhosh.me/prodhosh-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a class="main-button" href="mailto:hello@prodhosh.me">Email Me</a>
+      <div class="links reveal" style="--i:6">
         <button
           type="button"
-          class="main-button"
+          class="main-button primary"
+          data-track="book_call"
           data-cal-namespace="15min"
           data-cal-link="itzprodhosh/15min"
           data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
         >
-          Book a Call With Me
+          <i class="fa-regular fa-calendar"></i> Book a Call With Me
         </button>
+        <a class="main-button" href="https://prodhosh.me" target="_blank" rel="noopener noreferrer" data-track="portfolio">Portfolio</a>
+        <a class="main-button" href="https://blog.prodhosh.me/" target="_blank" rel="noopener noreferrer" data-track="blog">Blog</a>
+        <a class="main-button" href="/ProdhoshVS_Resume.pdf" target="_blank" rel="noopener noreferrer" data-track="resume">Resume</a>
+        <a class="main-button" href="mailto:hello@prodhosh.me" data-track="email">Email Me</a>
       </div>
 
-      <h3 class="section-title">Get In Touch</h3>
+      <h3 class="section-label mono reveal" style="--i:7">Featured work</h3>
+      <div class="work reveal" style="--i:8">
+        <a class="work-item" href="https://www.bsprep.com" target="_blank" rel="noopener noreferrer" data-track="work_bsprep">
+          <span><strong>BS Prep</strong><small>Learning platform · founding engineer</small></span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="work-item" href="https://flashfetch.app" target="_blank" rel="noopener noreferrer" data-track="work_flashfetch">
+          <span><strong>FlashFetch</strong><small>RAG document Q&amp;A</small></span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="work-item" href="https://ossconnect.me" target="_blank" rel="noopener noreferrer" data-track="work_ossconnect">
+          <span><strong>OSS Connect</strong><small>Your open-source identity beyond GitHub</small></span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="work-item" href="https://annexra.com" target="_blank" rel="noopener noreferrer" data-track="work_annexra">
+          <span><strong>Annexra</strong><small>Web agency site, end to end</small></span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <h3 class="section-label mono reveal" style="--i:9">Get in touch</h3>
       <form
         id="contact-form"
-        class="contact-form"
+        class="contact-form reveal"
+        style="--i:10"
         action="https://docs.google.com/forms/d/e/1FAIpQLSdKsfSGB4lTedZKbsg2c3WX7sEZs6hxpN24Cl7zvAc_tMqaFA/formResponse"
         method="POST"
         target="hidden_iframe"
       >
-        <input type="text" name="entry.1916182081" placeholder="Your Name" required />
-        <input type="email" name="entry.528512701" placeholder="Your Email" required />
-        <textarea name="entry.1941518091" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit" class="main-button">Send Message</button>
-        <p id="form-status" class="form-status">Thanks! Your message has been sent.</p>
+        <input type="text" name="entry.1916182081" placeholder="Your Name" aria-label="Your name" required />
+        <input type="email" name="entry.528512701" placeholder="Your Email" aria-label="Your email" required />
+        <textarea name="entry.1941518091" placeholder="Your Message" aria-label="Your message" rows="4" required></textarea>
+        <button type="submit" class="main-button primary">Send Message</button>
+        <p id="form-status" class="form-status" role="status">Thanks! Your message has been sent.</p>
       </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      <iframe name="hidden_iframe" id="hidden_iframe" title="Form submission target" style="display:none;"></iframe>
     </main>
 
-    <footer class="footer">
+    <footer class="footer mono">
       &copy; <span id="year"></span> Prodhosh VS &middot;
       <a href="https://prodhosh.me" target="_blank" rel="noopener noreferrer">prodhosh.me</a>
     </footer>
@@ -151,6 +183,7 @@
       window.Cal.ns["15min"]("ui", {
         hideEventTypeDetails: false,
         layout: "month_view",
+        cssVarsPerTheme: { dark: { "cal-brand": "#ff4f1f" }, light: { "cal-brand": "#ff4f1f" } },
       });
     </script>
 
