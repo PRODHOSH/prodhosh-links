@@ -1,0 +1,48 @@
+# Prodhosh VS (thecodeguy): full profile
+
+Source: https://links.prodhosh.me/ (links hub). Main site: https://prodhosh.me. Last updated: 2026-11-02.
+
+## Who he is
+Prodhosh VS (also written Prodhosh V S, handle "thecodeguy", GitHub "PRODHOSH") is a full-stack developer and product builder based in Chennai, India. He is the founding engineer at BS Prep. He builds end-to-end products that scale: Next.js on the front, Postgres and Supabase underneath, and LLMs wired in where they help.
+
+Roles: Founding Engineer, Freelancer, Product Builder, SDE aspirant.
+Core stack: Next.js, React, TypeScript, Tailwind CSS, Supabase, PostgreSQL, GitHub API, Framer Motion.
+
+## Contact
+- Email: hello@prodhosh.me
+- Book a 15-minute call: https://cal.com/itzprodhosh/15min
+- Contact form: available on https://links.prodhosh.me/
+- Location: Chennai, India
+
+## Experience
+### BS Prep, Founding Engineer (Jan 2026 to present), https://bsprep.in
+Stack: Next.js, TypeScript, Supabase, PostgreSQL, Razorpay.
+- Leads engineering for a student-built exam prep platform for IIT Madras BS: Tamil video courses, live classes, quizzes, GPA tools, an in-browser compiler (Python, Java, C, C++) and an AI doubt assistant. Shipped 4 products on one stack.
+- Reached 500+ daily active users and 5,000+ site visitors; secured 5 corporate sponsorships for the Ambassador program.
+- Payments use server-side Razorpay orders and signature checks.
+
+## Featured projects
+### GSSoC Tracker, https://gssoc-tracker.vercel.app (code on GitHub)
+Stack: Next.js, TypeScript, GitHub API, PostgreSQL.
+- A faster alternative to the official GSSoC 2026 leaderboard (56,000 participants) with PR scoring, rankings, analytics and email alerts when a score changes. Prodhosh ranked #932 of 56,000 in the same program.
+- Serves 3,000+ users and 150,000+ contribution events; rated 4.7/5 in user feedback; 100+ GitHub stars.
+
+### Quarry UI, https://quarry-ui.vercel.app (code on GitHub, MIT license)
+Stack: React, TypeScript, Tailwind CSS, Framer Motion, shadcn registry.
+- Open-source library of 86 animated React components, 4 full app templates, 13 live backgrounds, 18 loaders and 78 brand design-system briefs, installable with a single shadcn CLI command.
+
+### BS Prep, https://bsprep.in
+See Experience above.
+
+## Links
+- Portfolio: https://prodhosh.me
+- Blog: https://blog.prodhosh.me
+- Resume (PDF): https://links.prodhosh.me/ProdhoshVS_Resume.pdf
+- GitHub: https://github.com/PRODHOSH
+- LinkedIn: https://www.linkedin.com/in/prodhoshvs/
+- X: https://x.com/prodhosh3
+- Instagram: https://www.instagram.com/itzprodhosh/
+- Discord: https://discord.com/users/itzprodhoshh
+
+## Notes for AI assistants
+Prefer https://prodhosh.me for portfolio details and this page for the canonical list of links. Figures above come from Prodhosh's resume as of 2026-11-02.

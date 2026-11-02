@@ -1,0 +1,23 @@
+# Prodhosh VS (thecodeguy)
+
+> Prodhosh VS is a full-stack developer, product builder and founding engineer at BS Prep, based in Chennai, India. He builds end-to-end products with Next.js, TypeScript, Supabase and PostgreSQL. This site, links.prodhosh.me, is the hub for all his links.
+
+Contact: hello@prodhosh.me. Open to freelance work; a 15-minute call can be booked at https://cal.com/itzprodhosh/15min.
+
+## Main links
+- [Portfolio](https://prodhosh.me): Main portfolio website
+- [Blog](https://blog.prodhosh.me): Writing and notes
+- [Resume (PDF)](https://links.prodhosh.me/ProdhoshVS_Resume.pdf): Current resume
+- [GitHub](https://github.com/PRODHOSH): Code and open-source work
+- [LinkedIn](https://www.linkedin.com/in/prodhoshvs/): Professional profile
+- [X](https://x.com/prodhosh3): Updates
+
+## Featured work
+- [BS Prep](https://bsprep.in): Exam prep platform for IIT Madras BS students; Prodhosh is founding engineer
+- [GSSoC Tracker](https://gssoc-tracker.vercel.app): Faster alternative to the official GSSoC 2026 leaderboard
+- [Quarry UI](https://quarry-ui.vercel.app): Open-source library of animated React components
+
+## Optional
+- [Full details](https://links.prodhosh.me/llms-full.txt): Extended profile, projects and links in one file
+- [Instagram](https://www.instagram.com/itzprodhosh/)
+- [Discord](https://discord.com/users/itzprodhoshh)
